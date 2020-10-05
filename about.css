@@ -113,6 +113,10 @@ body {
     align-items: center;
 }
 
+#section8 {
+    text-align: center;
+}
+
 .nav-list {
     list-style: none;
     margin: 0;
