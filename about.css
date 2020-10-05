@@ -1,0 +1,142 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: [marginL-start] 6fr [MarginL-end row2-start] 7fr [row2-end row3-start] 10fr [row3-end row4-start] 5fr [row4-end MarginR-start] 2fr [MarginR-end] ;
+    grid-template-rows: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start]  5fr [col3-end col4-start] 1fr [col4-end];
+}
+
+
+body {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#top {
+    position: relative;
+    border-bottom: 1px solid #d4dadf;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #FFF;
+    box-shadow: 0 3px 8px 0 rgba(110, 130, 140, 0.1);
+    max-height: 95px;
+}
+
+#top-name {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    border-right: 3px solid #E6ECF1;
+    display: flex;
+    max-height: 95px;
+}
+
+#nfy-logo{
+    border=-radius: 50px;
+    margin-top: -30px;
+}
+
+#header {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: left;
+    border-bottom: 3px solid #E6ECF1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#header-tag {
+	font-size: 2.0rem;
+	line-height: 2.0rem;
+	text-align: left;
+	padding: 0px 20px;
+	padding-left: 7%;
+	border: 0px;
+	margin-top: 10%;
+	letter-spacing: 0px;
+	font-family: 'Didot';
+	color: #2c2c2c;
+}
+
+
+#bodyText {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 50px;
+    border-bottom: 3px solid #E6ECF1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#MarginR {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#MarginL {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border-right: 1px solid #E6ECF1;
+    box-shadow: 0 5px 8px 0 rgba(110, 130, 140, 0.1);
+    background: linear-gradient(to left, #F7F7F7 20%, #FFF 50%);
+    }
+
+#left-header{
+    text-align: center;
+}
+
+#ft {
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 25px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+#ft ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+     margin: 0 10px;
+}
+
+#ft ul li a:hover {
+     color: purple;
+}
+
+
+
+
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Non-Fungible Yearn</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/61e84dcb1c.js" crossorigin="anonymous"></script>
+         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+<!--        <script type="text/javascript" src="./web3.min.js"></script>
+        <script type="text/javascript" src="./abi.js"></script>
+        <script type="text/javascript" src="./main.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="./main.js"></script>-->
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div id="header">
+                <div id="nfy">
+                    <div id="nfy-logo"><a href="./index.html"><img src="./images/Nfy-logo.png" alt="NFY Logo" width="125" height="150"></a></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./about.html">About</a></li>
+                </ul>
+
+                <div id="connect">
+                    <button id="connect-web3" disabled onClick="connect()">Connect</button>
+                </div>
+
+            </div>
+
+            <div id="intro-container">
+                <h2>$NFY Pre-Sale Coming Soon!</h2>
+                <p>Non-Fungible Yearn is a DeFi platform whose goal is to utilize the possibilities of Non-Fungible Tokens (NFTs) in the DeFi sector!
+                </p>
+                <p><a href="./about.html">Click Here</a> to read more into NFY and our vision to DeFi better!</p>
+
+            </div>
+
+            <div id="info-container">
+                <div class="info-items" id="info-items-1">
+                    <h2 id="info-1-items-header">Token Sale Details</h2>
+                    <div class="details" id="tokens-started">Initial Sale: 30,000 NFY</div>
+                    <div class="details" id="soft-cap">Soft Cap: 100 ETH</div>
+                    <div class="details" id="hard-cap">Hard Cap: 900 ETH</div>
+                    <div class="details" id="token-price-1">Days 1-4 Price: 0.03 ETH per NFY</div>
+                    <div class="details" id="token-price-2">Days 5-7 Price: 0.0375 ETH per NFY</div>
+                </div>
+
+                <div class="info-items" id="info-items-2">
+                    <h2 id="info-2-items-header">Current Progress</h2>
+                    <div class="details" id="tokens-available">Tokens Available: N/A</div>
+                    <div class="details" id="tokens-sold">Tokens Sold: N/A</div>
+                    <div class="details" id="eth-raised">Ethereum Raised: N/A</div>
+                </div>
+
+            </div>
+
+            <div id="sale-container">
+
+                <div id="sale-container-div">
+
+                    <div class="sale-details" id="sale-info">
+
+                        <div class="balance-eth">
+                            <h3 id="user-balance">ETH Balance: N/A</h3>
+                            <!--<div id="balance">Balance</div>-->
+                        </div>
+
+                        <div class="eth-left-hardcap">
+                            <h3 id="eth-left">900 ETH Until Hard Cap</h3>
+                        </div>
+
+                        <div class="num-investments">
+                            <h3 class="investments">You Have Purchased 0 NFY Tokens</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="sale-details" id="sale-input">
+
+                        <div class="input">
+                            <input class="input-field"  disabled placeholder="Amount" id="amount">
+                            <div class="input-field">ETH</div>
+                        </div>
+
+                        <div class="submit-button">
+                            <button type="button" disabled class="button" id="invest" onclick="invest()">INVEST</button>
+                            <!--<button class="button" id="claim" onclick="claimTokens()">Claim</button>-->
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div id="footer">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="https://discord.gg/wKgUcYr">
+                        <i class="fab fa-discord"></i>
+                        &nbsp;Discord
+                    </a></li>
+
+                    <li class="nav-item"><a href="https://twitter.com/NFYFinance">
+                        <i class="fab fa-twitter"></i>
+                        &nbsp;Twitter
+                    </a></li>
+
+                    <li class="nav-item"><a href="https://t.me/NFYOfficial">
+                        <i class="fab fa-telegram-plane"></i>
+                        &nbsp;Telegram
+                    </a></li>
+
+                    <li class="nav-item"><a href="https://medium.com/@NFY">
+                        <i class="fab fa-medium-m"></i>
+                        &nbsp;Medium
+                    </a></li>
+
+                    <li class="nav-item"><a href="https://github.com/NFYFinance">
+                        <i class="fab fa-github"></i>
+                        &nbsp;GitHub
+                    </a></li>
+                </ul>
+            </div>
+
+
+
+            <div id="marginL"> </div>
+
+
+            <div id="marginR"></div>
+
+
+        </div>
+
+    </body>
+
+</html>

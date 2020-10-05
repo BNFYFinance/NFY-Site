@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family; sans-serif;
+    color: white;
+    margin: 0;
+    background-color: #b8cfe0;
+}
+
+.container {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 10% auto auto 10%;
+    grid-template-rows: 80px auto auto auto 50px;
+    grid-template-areas: "hd hd hd hd"
+                         "ml intro intro mr"
+                         "ml info info mr"
+                         "ml sale sale mr"
+                         "ml footer footer mr"
+}
+
+#header,
+#info-container,
+#intro-container,
+#sale-container,
+#footer {
+    padding: 15px;
+    text-align: center;
+}
+
+#intro-container {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+}
+
+#header {
+    grid-area: hd;
+    border-bottom: 1px solid black;
+    background-color: grey;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+#nfy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#connect-web3 {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+     height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 70;
+    padding: .5rem;
+    cursor: pointer;
+    min-width: 10rem;
+    border-radius: 250px;
+    letter-spacing: .1em;
+    border: none;
+}
+
+#connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-container {
+    grid-area: info;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.details {
+    margin: 5px;
+}
+
+.info-items {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    max-width: 45%;
+    flex-basis: 50%;
+    background-color: #2C3040;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    max-height: 200px;
+    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.72);
+}
+
+.button {
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: 70;
+    padding: .5rem;
+    cursor: pointer;
+    min-width: 15rem;
+    border-radius: 250px;
+    letter-spacing: .1em;
+    border: none;
+}
+
+
+.button:hover {
+    -webkit-transform: translateY(-3px);
+	transform: translateY(-3px)
+}
+
+.submit-button {
+    display: flex;
+    padding-bottom: 20px;
+
+}
+
+#sale-container {
+    grid-area: sale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#sale-container-div {
+    overflow: hidden;
+    height: 400px;
+    width: 620px;
+    display: flex;
+    flex-grow: 0;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.72);
+}
+
+.sale-details {
+    height: 100%;
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 50%;
+    background-color: #2C3040;
+}
+
+.input {
+    display: flex;
+}
+
+#sale-info {
+    flex-grow: 2;
+    flex-basis: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#sale-input {
+    flex-grow: 5;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-field {
+    background: 0 0;
+    padding: 1.5rem 2.5rem;
+    box-shadow: inset 0 0 0 .25rem var(--border-color);
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 3rem 0;
+    color: white;
+}
+
+#sale-box {
+    border: 1px solid rgba(25, 101, 233, 0.5);
+    padding-top: 80px;
+    padding-right: 30px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+
+    flex-wrap: wrap;
+    border-radius: 50px;
+    color: #212529;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: grey;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+
+#footer {
+    grid-area: footer;
+}
+
+#marginL {
+    grid-area: ml;
+}
+
+#marginR {
+    grid-area: mr;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    margin: 0 10px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover {
+    color: purple;
+}
